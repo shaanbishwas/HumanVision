@@ -202,8 +202,8 @@ body{
 }
 .compare{
     position: relative;
-    width: 875px;
-    height:650px;
+    width: 880px;
+    height:340px;
     border: 1px solid #f5f5f5;
     box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.15);
     margin-left: auto;
@@ -215,7 +215,7 @@ body{
     top: 0px;
     width: 100%;
     height: 100%;
-    background: url("images/test.png");
+    background: url("images/880x340tag.png");
 }
 .compare .before .after{
  position: relative;
@@ -223,7 +223,7 @@ body{
  left: 0px;
  width: 100%;
  height: 100%;
- background: url("images/b4.png");
+ background: url("images/880x340orig.png");
  z-index: 2;
  
 }
@@ -241,7 +241,7 @@ body{
  -webkit-appearance:none;
  display: block;
  width: 10px;
- height:650px;
+ height:340px;
  border: 1px solid #f5f5f5;
  background: #5b83dc;
  cursor: pointer;
