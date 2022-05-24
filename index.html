@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/lg.png" alt=""></a>
+            <div class="cmp-name">HUMAN VISION</div>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>AI-ML Data Annotation Services</h1>
+            <p>Leveraging human intelligence, expertise and technology to provide the data insights needed to advance AI.</p>
+            <a href="" class="hero-btn">Visit Us to Know More</a>
+    </section>
+
+    <!-- course   -->
+    <section class="service">
+        <h1>Services We Offer</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="row">
+            <div class="service-col">
+                <h3>Image Annotation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolore.</p>
+            </div>
+            <div class="service-col">
+                <h3>Video Annotation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolore.</p>
+            </div>
+            <div class="service-col">
+                <h3>Image Segmentation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolore.</p>
+            </div>
+            
+    </section>
+    <!-- Examples slider -->
+    <section>
+        <div class="container">
+            <div class="title">
+              Examples of what we do
+            </div>
+            <div class="compare">
+              <div class="before">
+                <div class="after"></div>
+              </div>
+                <input type="range" min="0" max="880" step="10" id="compare-ip">
+            </div>
+          </div>
+    </section>
+
+    <section>
+        <h3>Next Section</h3>
+    </section>
+<!-- javascript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+
+        document.querySelector(".compare #compare-ip").addEventListener(
+        "input", function(e){
+        document.querySelector(".compare .before .after").style.width = (+e.target.value) + "px";
+        });
+
+        document.querySelector(".compare #compare-ip").addEventListener(
+        "change", function(e){
+        document.querySelector(".compare .before .after").style.width = (+e.target.value) + "px";
+});
+
+
+    </script>
+
+</body>
+</html>
