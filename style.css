@@ -409,6 +409,7 @@ body {
 }
 .services-item img{
     width: 100%;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .services-item h1{
