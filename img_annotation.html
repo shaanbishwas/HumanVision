@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <section class="sub-header">
+    <section class="sub-header-image">
         <nav>
             <a href="index.html"><img src="images/lg.png" alt=""></a>
             <div class="cmp-name">HUMAN VISION</div>
@@ -31,23 +31,35 @@
             </div>
             <i class="bi bi-list" onclick="showMenu()"></i>
         </nav>
-        <h1>Image Annotation</h1>
+        <h1 class="serviceHeader">Image Annotation</h1>
     </section>
 
     <!-- -------------- Image Annotation Content ------------- -->
+    <section>
+        <div class="definition">
+            <h1>What is Image Annotation</h1>
+            <p class="para">Image annotation is the process of labeling an image, which strategically involves
+                human-powered work and sometimes, computer-assisted help. It is an important step in creating computer
+                vision models for tasks like image segmentation, image classification, and object detection. Image
+                annotation can range from annotating every group of pixels within an image to one label for an entire
+                image.
 
+                Successful image annotation projects involving computer vision are built on high-quality annotation. The
+                type of annotation needed will depend on the use case the project is designed for.</p>
+        </div>
+    </section>
     <section class="services">
+        <h1 class="img-h1">Our Image Annotation Services</h1>
         <div class="alt-row">
             <div class="services-item">
                 <i class="bi bi-bounding-box-circles" id="box"></i>
                 <h1>2D Bounding Box</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores error ex officia quasi autem
-                    velit ipsa! Mollitia, impedit fuga reprehenderit esse iusto quod. Excepturi cumque eveniet hic
-                    commodi facere, odio aspernatur vel debitis ea aut, dignissimos nemo? Doloremque, sint qui
-                    repellendus consequatur excepturi consequuntur obcaecati expedita fugiat sed accusamus.
+                    Bounding boxes are superimposing a box around the object you would like the computer to recognize in
+                    a given image. It is used in the automotive, agriculture, retail and e-commerce, insurance,
+                    information technology, and real estate industries. HumanVision expert delivers bounding box
+                    services that power Artificial Intelligence, Machine Learning, and data operation strategies.
                 </p>
-                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
             </div>
             <div class="services-item">
                 <img src="images/2dboxper.png" alt="background">
@@ -64,12 +76,12 @@
                 <i class="bi bi-octagon" id="box"></i>
                 <h1>Polygon Annotation</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores error ex officia quasi autem
-                    velit ipsa! Mollitia, impedit fuga reprehenderit esse iusto quod. Excepturi cumque eveniet hic
-                    commodi facere, odio aspernatur vel debitis ea aut, dignissimos nemo? Doloremque, sint qui
-                    repellendus consequatur excepturi consequuntur obcaecati expedita fugiat sed accusamus.
+                    If you encounter the exact shape of an irregular object, our polygon annotation service will use
+                    segmentation masks to get the most precise image annotation. Polygons are used in the automotive,
+                    real estate, information technology and healthcare industries. HumanVision expert delivers polygon
+                    annotation services that power Artificial Intelligence, Machine Learning, and data operation
+                    strategies.
                 </p>
-                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
             </div>
         </div>
     </section>
@@ -80,12 +92,12 @@
                 <i class="bi bi-cursor" id="box"></i>
                 <h1>Landmarks</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores error ex officia quasi autem
-                    velit ipsa! Mollitia, impedit fuga reprehenderit esse iusto quod. Excepturi cumque eveniet hic
-                    commodi facere, odio aspernatur vel debitis ea aut, dignissimos nemo? Doloremque, sint qui
-                    repellendus consequatur excepturi consequuntur obcaecati expedita fugiat sed accusamus.
+                    Annotating all of the various landmarks out there is done by marking key points in a specified area.
+                    It was designed to help capture human figures and poses in 2D images. Keypoint annotation has many
+                    practical applications in the healthcare, automotive, insurance, agriculture, retail, and e-commerce
+                    industries. HumanVision expert delivers keypoint annotation services that power Artificial
+                    Intelligence, Machine Learning, and data operation strategies.
                 </p>
-                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
             </div>
             <div class="services-item">
                 <img src="images/keypoint.png" alt="background">
@@ -96,18 +108,18 @@
     <section class="services">
         <div class="alt-row">
             <div class="services-item">
-                <img src="images/image.jpg" alt="background">
+                <img src="images/seg.png" alt="background">
             </div>
             <div class="services-item">
                 <i class="bi bi-x-diamond-fill" id="box"></i>
                 <h1>Semantic Segmentation</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores error ex officia quasi autem
-                    velit ipsa! Mollitia, impedit fuga reprehenderit esse iusto quod. Excepturi cumque eveniet hic
-                    commodi facere, odio aspernatur vel debitis ea aut, dignissimos nemo? Doloremque, sint qui
-                    repellendus consequatur excepturi consequuntur obcaecati expedita fugiat sed accusamus.
+                    In computer vision, image segmentation is the process of partitioning a image into multiple image
+                    segments, also known as image regions or image objects (sets of pixels).Image segmentation is
+                    typically used to locate objects and boundaries (lines, curves, etc.) in images. HumanVision
+                    delivers image segmentation services that power Artificial Intelligence, Machine Learning, and data
+                    operation strategies.
                 </p>
-                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
             </div>
         </div>
     </section>
@@ -118,12 +130,11 @@
                 <i class="bi bi-images" id="box"></i>
                 <h1>Image Classification</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores error ex officia quasi autem
-                    velit ipsa! Mollitia, impedit fuga reprehenderit esse iusto quod. Excepturi cumque eveniet hic
-                    commodi facere, odio aspernatur vel debitis ea aut, dignissimos nemo? Doloremque, sint qui
-                    repellendus consequatur excepturi consequuntur obcaecati expedita fugiat sed accusamus.
+                    Classify images or objects within images based on custom multi-level taxonomies, including land use,
+                    crops, residential property features, among others. Expert image classification turns image data
+                    into image insights for AI and ML models.HumanVision expert delivers classification services that
+                    power Artificial Intelligence, Machine Learning, and data operation strategies.
                 </p>
-                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
             </div>
             <div class="services-item">
                 <img src="images/class.png" alt="background">
