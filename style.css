@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 .header {
@@ -270,30 +271,113 @@ body {
 }
 
 /* -----------Footer------------ */
-.footer {
+footer{
     width: 100%;
-    text-align: center;
-    padding: 30px 0;
-    background-color: #33333c;
-}
-
-.footer h4 {
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
+    /* position: absolute; */
+    bottom: 0;
+    background: linear-gradient(to right, #33333c, #33333c);
     color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
 
 }
+.footer-row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;  
+}
+.footer-col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.footer-col:nth-child(2){
+    flex-basis: 15%;
 
-.icons .bi {
+}
+.footer-logo{
+    width: 50px;
+}
+.footer-col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+footer ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.social-icons .bi{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
     color: #f44336;
-    margin: 0 13px;
+    margin-right: 15px;
     cursor: pointer;
-    padding: 18px 0;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copyright{
+    color: #fff;
+    text-align: center;
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
 }
 
-.bi-heart {
-    color: #f44336;
+@media (max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+    .footer-col{
+    flex-basis: 100%;
+    }
+    .footer-col:nth-child(2){
+    flex-basis: 100%;
+
+}
 }
 
 /* -----------------About Us page------------- */
