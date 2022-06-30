@@ -18,8 +18,10 @@
 <body>
     <section class="header">
         <nav>
-            <a href="index.html"><img src="images/lg.png" alt=""></a>
-            <div class="cmp-name">HUMAN VISION</div>
+            <div class="logoheader">
+                <a href="index.html"><img src="images/invert.png" alt=""></a>
+                <div class="cmp-name">HUMAN VISION</div>
+            </div>
             <div class="nav-links" id="navLinks">
                 <i class="bi bi-x-lg" onclick="hideMenu()"></i>
                 <ul>
@@ -38,45 +40,39 @@
     </section>
 
     <!---------------------- Services -------------------->
-    <section class="service" id="serve">
+    <div class="container-service" id="serve">
         <h1>Services We Offer</h1>
-        <div class="alt-row">
-            <a href="img_annotation.html">
-                <div class="service-col">
-                    <i class="bi bi-bounding-box-circles"></i>
-                    <h3>Image Annotation</h3>
-                    <p>Assigning quality metadata in the Images in the form of 2D bounding boxes, image segmentations,
-                        landmarks, classification etc.</p>
-                </div>
-            </a>
-            <a href="video_annotation.html">
-                <div class="service-col">
-                    <i class="bi bi-camera-reels"></i>
-                    <h3>Video Annotation</h3>
-                    <p>The task of classifying or predicting the action being performed by someone is done in our Video
-                        Annotation.
-                    </p>
-                </div>
-            </a>
-            <a href="text_annotation.html">
-                <div class="service-col">
-                    <i class="bi bi-journal-text"></i>
-                    <h3>Text Annotation</h3>
-                    <p>It is a process of adding value to a text by adding information such as meaning/intent/sentiment
-                        etc to it.</p>
-                </div>
-            </a>
-            <a href="audio.html">
-                <div class="service-col">
-                    <i class="bi bi-mic"></i>
-                    <h3>Audio Annotation</h3>
-                    <p>Classifying components of an audio. With a team that interprets audio, we can transcript audio,
-                        detect speaker and more.</p>
-                </div>
-            </a>
+        <div class="flex">
+            <div class="card">
+                <i class="bi bi-bounding-box-circles"></i>
+                <h3>Image Annotation</h3>
+                <p>Assigning quality metadata in the Images in the form of 2D bounding boxes, image segmentations,
+                    landmarks, classification etc.</p>
+                <a href="img_annotation.html" class="hero-btn red-btn btn">EXPLORE NOW</a>
+            </div>
+            <div class="card">
+                <i class="bi bi-camera-reels"></i>
+                <h3>Video Annotation</h3>
+                <p>The task of classifying or predicting the action being performed by someone is done in our Video
+                    Annotation.</p>
+                <a href="video_annotation.html" class="hero-btn red-btn btn">EXPLORE NOW</a>
+            </div>
+            <div class="card">
+                <i class="bi bi-journal-text"></i>
+                <h3>Text <br> Annotation</h3>
+                <p>It is a process of adding value to a text by adding information such as meaning/intent/sentiment
+                    etc to it.</p>
+                <a href="text_annotation.html" class="hero-btn red-btn btn">EXPLORE NOW</a>
+            </div>
+            <div class="card">
+                <i class="bi bi-mic"></i>
+                <h3>Audio Annotation</h3>
+                <p>Classifying components of an audio. With a team that interprets audio, we can transcript audio,
+                    detect speaker and more.</p>
+                <a href="audio.html" class="hero-btn red-btn btn">EXPLORE NOW</a>
+            </div>
         </div>
-
-    </section>
+    </div>
     <!-- Examples slider -->
     <section>
         <div class="container">
